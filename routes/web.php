@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/getlocation', 'SurveyController@getLocationData');
+Route::post('/uploadsurvey', 'SurveyController@uploadSurvey');
